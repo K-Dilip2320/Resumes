@@ -1,0 +1,135 @@
+/* prime number
+
+boolean isprime = true;
+        
+        for(int i =2 ; i<num;i++){
+            if(num%i==0){
+                isprime = false;
+                break;
+            }
+        }
+        
+        if(isprime)
+             System.out.println("The given number is a prime");
+        else 
+            System.out.println("The given number is not a prime"); 
+ */           
+            
+/*  Armstrong number 
+    int num = 153;   // 1*1*1 + 5*5*5* + 3*3*3 = 153
+        
+        int originalnum = num;
+        
+        int result =0;
+        
+        while(num!=0){
+            int rem = num %10;
+            result += Math.pow(rem, 3);
+            num /= 10;
+        }
+        
+        if(originalnum == result)
+                System.out.println("The given number is a armstrong number");
+        else
+                System.out.println("The given number is not a armstrong number");
+        
+*/
+
+/* Palindrome number 
+
+    int num = 121;
+        
+        int original = num;
+        
+        int result = 0;
+        
+        while(num!=0){
+            int rem = num % 10;
+            result  = result * 10 + rem;
+            num /= 10;
+        }
+        
+        if(original == result) 
+            System.out.println("The given number is a plaindrome ");
+        else 
+            System.out.println("The given number is not a plaindrome ");
+*/
+
+/* String palindrome
+
+    String s = "sMadams";
+        
+        s = s.toLowerCase();
+
+        String rev = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            rev = rev + s.charAt(i);
+        }
+
+       if(s.equals(rev))
+            System.out.println("The given string is a palindrome");
+        else
+            System.out.println("The given string is not a palindrome");
+*/
+
+
+/* Factorial of a number
+       int n =5;
+      int fact =1;
+        
+        for(int i=1; i<=n; i++){
+            fact = fact * i;
+        }
+        
+        System.out.println(fact);
+*/
+
+/* Anagram
+
+      String s1 = "Hiy";
+        String s2 = "hiy";
+        
+        
+              
+        
+        char[] ch1 = s1.toLowerCase().toCharArray();
+        char[] ch2 = s2.toLowerCase().toCharArray();
+        
+        
+             java.util.Arrays.sort(ch1);
+             java.util.Arrays.sort(ch2);
+             
+             if(java.util.Arrays.equals(ch1,ch2)){
+                 System.out.println("The given strings is anagram");
+             }else{
+                 System.out.println("The given Strings is not anagram");
+             }
+        
+          
+*/
+
+/* Seperating characters, numbers and special characters from string
+
+ String input = "abc123!@#DEF456";
+
+        // StringBuilder to store letters, numbers, and special characters
+        StringBuilder letters = new StringBuilder();
+        StringBuilder numbers = new StringBuilder();
+        StringBuilder specialChars = new StringBuilder();
+
+        // Iterate through each character in the input string
+        for (char ch : input.toCharArray()) {
+            if (Character.isLetter(ch)) {
+                letters.append(ch);
+            } else if (Character.isDigit(ch)) {
+                numbers.append(ch);
+            } else {
+                specialChars.append(ch);
+            }
+        }
+
+        // Output the separated characters
+        System.out.println("Letters: " + letters.toString());
+        System.out.println("Numbers: " + numbers.toString());
+        System.out.println("Special Characters: " + specialChars.toString());
+*/
